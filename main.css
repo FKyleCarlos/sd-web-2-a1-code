@@ -59,7 +59,7 @@ section h2 {
 }
 
 section p {
-  color: #666;
+  color: #f1efef;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -110,7 +110,8 @@ ul li:last-child {
   margin-top: 1rem;
 }
 
-.error-message {
+#error-messages,
+#broken-array-errors {
   background-color: #f8d7da;
   color: #721c24;
   padding: 0.75rem;
@@ -122,7 +123,7 @@ ul li:last-child {
 }
 
 /* Empty state styles */
-.empty-list {
+#empty-list {
   color: #6c757d;
   font-style: italic;
   text-align: center;
@@ -159,7 +160,7 @@ code {
 }
 
 /* Success indicator */
-.success {
+#success {
   color: #155724;
   background-color: #d4edda;
   border: 1px solid #c3e6cb;
