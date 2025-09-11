@@ -82,7 +82,7 @@ function validateListItem(item, idx){
     return item.name
   }
   else{
-    console.log(`item name does not exist at position: ${idx+1}`);
+    console.error(`item name does not exist at position: ${idx+1}`);
     throw new Error(`item name does not exist at position: ${idx+1}`)
   }
 }
@@ -98,7 +98,7 @@ const displayNamesWithValidation = (list, successOutput, failOutput) => {
     successOutputElement.appendChild(listItem);
     }
     catch (error){
-    listItem.id = "";
+    listItem.id = "fail";
     listItem.textContent = error.message;
     failOutputElement.appendChild(listItem);
     }
